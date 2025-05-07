@@ -27,6 +27,16 @@ public class MapService {
             currentPosition--;
         }
 
+        // TODO: Aufgabe 7 + Aufgabe 10
+        String text1 = "A grotesque silhouette blocks your path, its breath a symphony of rot.<br>" +
+                "Your blade finds its mark in a final, terrible arc. The grotesque thing collapses in a spray of ichor, its last rasp a hollow mockery of life.";
+        String text2 = "A great door stands inert — bound in silence, sealed by time.<br>" +
+                "With a rasping grind, the ancient lock yields to your key—but the door still clings shut.<br>" +
+                "You deliver a bone-shaking kick, and the iron barrier bursts open with a deafening crack.";
+        String text3 = "You escaped the nightmare... only to awaken at your desk.<br>" +
+        "The labyrinth fades, replaced by flickering screens and endless code.<br>" +
+                "Enjoy your day... if you dare.";
+
         ourMap.setCurrentPosition(currentPosition);
         mapRepo.save(ourMap);
         return event + "<br>" +
